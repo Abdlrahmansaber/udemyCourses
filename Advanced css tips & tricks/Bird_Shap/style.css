@@ -1,0 +1,173 @@
+body {
+	background: #3396f5;
+}
+.card {
+  width: 300px;
+  height: 420px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #f9f9f9;
+  box-sizing: content-box;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.card::after,
+.card::before {
+	/*background-image: radial-gradient(shape size at position, start-color, ..., last-color);*/
+   content: "";
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle, #3396f5 50%, transparent 50%),
+    radial-gradient(circle, #3396f5 50%, transparent 50%);
+  background-size: 20px 20px;
+}
+.card::after {
+	width: 280px;
+	height: 420px;
+	left: 10px;
+	background-repeat: repeat-x;
+	background-position: 0% -3%, 0% 103%;
+}
+/*
+x% y%	The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%.
+The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. . Default value is: 0% 0%
+*/
+.card::before {
+  top: 10px;
+  background-repeat: repeat-y;
+  background-position: -4% 0%, 104.2% 0;
+}
+h1,
+h6,
+p {
+	 margin: 0;
+  padding: 0;
+}
+.content {
+  width: 100%;
+  margin-top: 20px;
+  color: #c52e6b;
+  font-size: 21px;
+  line-height: 30px;
+  display: flex;
+  /*Items are positioned with space between the lines*/
+  justify-content: space-between;
+
+}
+.content h6 {
+  color: #2f5769;
+}
+.content div {
+  color: #6117a4;
+  font-size: 35px;
+  line-height: 45px;
+}
+.bird-one {
+  width: 250px;
+  height: 290px;
+  position: relative;
+  background-color: #93c1e0;
+  overflow: hidden;
+}
+.beak {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 65px;
+  left: 85px;
+  transform: rotate(55deg);
+  background-color: #19efff;
+}
+.neck {
+  width: 200px;
+  height: 260px;
+  border-top-left-radius: 15% 10%;
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  transform: skewX(-20deg);
+  background: linear-gradient(to top, #8f18ff 86%, #19efff 16%);
+  overflow: hidden;
+}
+
+.neck::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  border-top-left-radius: 18% 80%;
+  position: absolute;
+  top: 17px;
+  background: linear-gradient(to top, #5a1a95, #7f00f7);
+  box-shadow: 0px -1px 0px 0.8px #8500ff, 0px -5px 8px rgba(0, 0, 0, 0.3);
+}
+/**/
+.cir-blue {
+  width: 200px;
+  height: 200px;
+  border: 20px solid #6117a4;
+  border-top-left-radius: 65% 50%;
+  position: absolute;
+  top: 120px;
+  left: -20px;
+  background-color: #19efff;
+}
+.feathers {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 135px;
+  background: linear-gradient(to left, #ccedff 75%, #434dfd);
+  box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.feather {
+  width: 30px;
+  height: 150px;
+  position: absolute;
+  border-top-left-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+}
+
+.fe1 {
+  top: 12px;
+  left: 25px;
+  background-color: #84a0fc;
+  box-shadow: -8px 12px 8px rgba(0, 0, 0, 0.5), -1.5px 0px 0 #76c1ff;
+}
+.fe2 {
+  top: 5px;
+  left: 45px;
+  background-color: #99acfe;
+  box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.5), -1.5px 0 0 #52bafa;
+}
+.fe3 {
+  left: 65px;
+  background-color: #c4e0fb;
+  box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.5), -0.8px 0 0 #60a2fd;
+}
+.eye {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  right: 75px;
+  background-color: white;
+}
+.eye::before {
+  content: "";
+  width: 16px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: linear-gradient(to left, #2f4ba1 50%, #4b71d6 50%);
+  box-shadow: -0.6px 0px 0px 0.7px #364e9e, -4px 0px 4px #737e92,
+    2px 0px 3px #96a6bd;
+}

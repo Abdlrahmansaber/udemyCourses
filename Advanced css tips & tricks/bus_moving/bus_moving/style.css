@@ -1,0 +1,146 @@
+body {
+	background: #333;
+	padding-top: 100px;
+	overflow-x: hidden;
+}
+.road {
+	background: gray;
+	border-radius: 2px;
+	width: auto;
+	height: 80px;
+	margin: 55px 10px 0 10px;
+}
+.line {
+	position: relative;
+	width: 1200px;
+	top: 40px;
+	height: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	border:1px dashed white;
+	clear: both;
+}
+
+.bus {
+	display: inline-block;
+	position: relative;
+	width: 90px;
+	height: 45px;
+	background: red;
+	clear: both;
+	border-radius: 17px 10px 2px 2px;
+	margin: 20px 0 0 10px;
+	animation: busMove 7s infinite  normal ease-in-out;
+}
+.up1 {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	border-radius: 4px 4px 0 0;
+	background: #fff;
+	 margin: -5px 0px 0px 19px;
+}
+.up2 {
+	position: absolute;
+	display: inline-block;
+	width: 2px;
+	height: 5px;
+	border-radius: 4px 4px 0 0;
+	background: #fff;
+	margin: -5px 0px 0px 26px;
+}
+.up3 {
+	position: absolute;
+	display: inline-block;
+	width: 2px;
+	height: 5px;
+	border-radius: 4px 4px 0 0;
+	background: #fff;
+	margin: -5px 0px 0px 61px;
+}
+.win1 {
+	position: absolute;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 4px 0 0 0;
+	margin: 5px 20px 0 8px;
+}
+
+.win2 {
+	position: absolute;
+	display: inline-block;
+	width: 17px;
+	height: 12px;
+	background: #fff;
+	border-radius: 3px 3px 0 0;
+	margin: 5px 33px 0 24px;
+}
+
+.win3 {
+	position: absolute;
+	display: inline-block;
+	width: 17px;
+	height: 12px;
+	background: #fff;
+	border-radius: 3px 3px 0 0;
+	margin: 5px 54px 0 48px;
+}
+.win4 {
+	position: absolute;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 0px 4px 0 0;
+	margin: 5px 54px 0 72px;
+}
+.whel1 {
+	position: absolute;
+	display: inline-block;
+	background: #000;
+	border-radius: 80px;
+	width: 14px;
+	height: 14px;
+	margin: 37px 5px;
+}
+
+.whel2 {
+	position: absolute;
+	display: inline-block;
+	background: #000;
+	border-radius: 80px;
+	width: 14px;
+	height: 14px;
+	margin: 37px 72px;
+}
+
+.light {
+	z-index: 1;
+	position: absolute;
+	display: inline-block;
+	width: 4px;
+	height: 8px;
+	background-color: #e00808;
+	border-radius: 0 90px 90px 0;
+	margin:25px 90px;
+}	
+.floggy {
+	position: absolute;
+	width: 4px;
+	height: 8px;
+	border-right: 200px solid #f7f771;
+	border-bottom: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-radius: 100px;
+    margin: 5px 67px;
+
+}
+@keyframes busMove {
+	0% { left: -300px; }
+	50% {left: 600px}
+	100% {left: 1400px}
+}

@@ -1,0 +1,30 @@
+.box {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 100px;
+	height: 100px;
+	background:red;
+	animation-name: Box;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-fill-mode: 
+}
+@keyframes Box {
+	0% {
+		left: 0%;
+	}
+	25% {
+		left: 20%;
+	}
+	50% {
+		left: 50%;
+	}
+	75% {
+		left: 70%;
+	}
+	100% {
+		left: 80%;
+	}
+}

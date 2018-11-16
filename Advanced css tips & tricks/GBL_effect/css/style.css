@@ -1,0 +1,60 @@
+body {
+	background: #333;
+}
+.growingP {
+	margin:60px 0;
+}
+.growing {
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	padding: 2px 5px;
+	border: 1px solid #2f2626;
+	color: #fff;
+	text-decoration: none;
+	background: rgba(35, 226, 201, 0.3);
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.growing:hover {
+	background: #00aaed;
+	border-color: #00aaed;
+
+	transform: scale(1.2);
+	border-radius: 10px;
+	box-shadow: 0 0 20px black;
+}
+
+h3 {
+	text-align: center;
+	height: 100px;
+	font: bold 88px helvetica, Sans-Serif;
+	color: rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 2px rgba(0,0,0,0.2),
+	text-shadow: 0 0 4px rgba(0,0,0,0.2),
+	text-shadow: 0 0 6px rgba(0,0,0,0.2);
+	transition: all 0.2s linear;
+	
+}
+h3:hover {
+	letter-spacing: 15px;
+	color: rgba(28, 28, 28, 0.2);
+	font-size: 70px
+	opacity:0.8;
+}
+
+.last {
+	background: #00aaed;
+	width: 200px;
+	height:100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50px;
+	transition: all 0.5s ease-in-out;
+}
+.last:hover {
+	transform: rotate(720deg);
+}

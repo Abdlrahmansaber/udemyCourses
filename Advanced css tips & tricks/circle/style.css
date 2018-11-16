@@ -1,0 +1,33 @@
+body {
+  background:#333;
+}
+.loaders {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.load {
+  margin-top: 50px;
+}
+#circle {
+  border: 11px solid #f3f3f3;
+  border-top: 11px solid #f00;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: circle 1s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
